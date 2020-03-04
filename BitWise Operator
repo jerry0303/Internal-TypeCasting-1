@@ -1,0 +1,31 @@
+class Geeks{
+    static void bitWiseOp(int a, int b, int c){
+         int d,e,f,g,e1;
+         d = a ^ a;
+         e = c ^ b;
+         f = a & b;
+         g = c | (a ^ a);
+         e1 = ~e;
+         
+         System.out.println(d+"\n"+e+"\n"+f+"\n"+g+"\n"+e1);
+        
+    } 
+}
+
+class GFG {
+	public static void main (String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int testcases = sc.nextInt();
+		
+		while(testcases-- > 0){
+		    int a = sc.nextInt();
+		    int b = sc.nextInt();
+		    int c = sc.nextInt();
+		    
+		    Geeks g = new Geeks();
+		    g.bitWiseOp(a, b, c);
+		}
+	}
+}
